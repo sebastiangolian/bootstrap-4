@@ -1,0 +1,48 @@
+{
+  "name": "bootstrap-4",
+  "version": "1.0.0",
+  "description": "Bootstrap 4 test app",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack",
+    "clear": "node scripts/clear.js && npm run build",
+    "deploy": "node scripts/deploy.js",
+    "predeploy": "npm run clear"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastiangolian/bootstrap-4.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "npm",
+    "responsive",
+    "rwd",
+    "webpack",
+    "scss"
+  ],
+  "author": "sebastiangolian@gmail.com",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/sebastiangolian/bootstrap-4/issues"
+  },
+  "homepage": "https://github.com/sebastiangolian/bootstrap-4#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.6",
+    "css-loader": "^2.1.0",
+    "exports-loader": "^0.7.0",
+    "fs-extra": "^7.0.1",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
