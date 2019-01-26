@@ -1,6 +1,18 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'production',
+  watch: true,
+  watchOptions: {
+    aggregateTimeout: 1000,
+    poll: 5000,
+    ignored: ['node_modules']
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  },
   entry: './src/app.js',
   output: {
     filename: 'bundle.js',
@@ -11,12 +23,9 @@ module.exports = {
       {
         test: /\.(scss)$/,
         use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          },
+          "style-loader",
+          "css-loader",
+          "sass-loader",
           {
             loader: 'postcss-loader',
             options: {
@@ -27,9 +36,6 @@ module.exports = {
               }
             }
           },
-          {
-            loader: 'sass-loader'
-          }
         ]
       }
     ]
