@@ -1,8 +1,6 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
-  watch: true,
   watchOptions: {
     aggregateTimeout: 1000,
     poll: 5000,

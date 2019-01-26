@@ -7,9 +7,8 @@
     "start": "webpack-dev-server --open --mode development",
     "watch": "webpack --watch --mode development --info-verbosity verbose",
     "build": "webpack --mode production",
-    "clear": "node scripts/clear.js && npm run build",
     "deploy": "node scripts/deploy.js",
-    "predeploy": "npm run clear"
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
