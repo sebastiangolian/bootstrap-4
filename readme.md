@@ -2,6 +2,9 @@
 App to testing bootstrap package.
 With webpack, scss, and loaders.
 
+## Test app
+[bootstrap-4](https://github.com/sebastiangolian/bootstrap-4)
+
 ## Getting started
 ```bash
 npm install
