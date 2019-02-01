@@ -9,12 +9,12 @@ With webpack, scss, and loaders.
 ```bash
 npm install
 ```
-
-## Scripts
 Run project
 ```bash
 npm run start
 ```
+
+## Scripts
 Watch project
 ```bash
 npm run watch
