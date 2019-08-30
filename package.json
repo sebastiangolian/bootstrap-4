@@ -14,14 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/sebastiangolian/bootstrap-4.git"
   },
-  "keywords": [
-    "bootstrap",
-    "npm",
-    "responsive",
-    "rwd",
-    "webpack",
-    "scss"
-  ],
+  "keywords": ["bootstrap","npm","responsive","rwd","webpack","scss"],
   "author": "sebastiangolian@gmail.com",
   "license": "MIT",
   "bugs": {
