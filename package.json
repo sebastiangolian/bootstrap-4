@@ -2,10 +2,10 @@
   "name": "bootstrap-4",
   "version": "1.0.0",
   "description": "Bootstrap 4 test app",
-  "main": "dist/index.html",
+  "homepage": "https://sebastiangolian.github.io/bootstrap-4/",
   "scripts": {
-    "start": "webpack-dev-server --port=9000 --open --inline",
-    "build": "webpack --mode production",
+    "build": "webpack",
+    "start": "webpack-dev-server --open --port=9000",
     "deploy": "node scripts/deploy.js",
     "predeploy": "npm run build"
   },
@@ -16,20 +16,20 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "copy-webpack-plugin": "^6.0.3",
-    "css-loader": "^4.2.1",
-    "exports-loader": "^1.1.0",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.0.0",
     "gh-pages": "^3.1.0",
-    "html-loader": "^1.2.1",
-    "lodash": "^4.17.20",
+    "html-loader": "^1.3.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.10.0",
     "node-sass": "^4.14.1",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^9.0.3",
-    "style-loader": "^1.2.1",
+    "sass-loader": "^10.0.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-livereload-plugin": "^2.3.0"
+    "webpack-dev-server": "^3.11.0"
   }
 }
