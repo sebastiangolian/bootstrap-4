@@ -1,6 +1,33 @@
-$color-primary: blue;
-$font-size: 20px;
+$bg-primary: #007bff;
+$color-primary: white;
+$font-size: 14px;
 
 body {
     font-size: $font-size;
+}
+
+nav {
+    background-color: $bg-primary;
+    color: $color-primary!important;
+}
+
+.nav-link{
+    color: $color-primary!important;
+}
+
+footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: $bg-primary!important;
+    color: $color-primary!important;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: $color-primary!important;
 }
