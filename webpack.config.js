@@ -1,6 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const path = require('path');
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
         main: './src/main.js'
     },
     output: {
-        filename: './js/[name].[contenthash].js',
+        filename: './js/[name].[hash].js',
     },  
     module: {
         rules: [
@@ -30,7 +30,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(png|svg|jpg|gif|ico)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
@@ -53,10 +53,11 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebPackPlugin({
             template: "./src/index.html",
-            filename: "./index.html"
+            filename: "./index.html",
+            favicon: "./src/favicon.ico"
         }),
         new MiniCssExtractPlugin({
-            filename: "./css/[name].[contenthash].css",
+            filename: "./css/[name].[hash].css",
             chunkFilename: "[id].css"
         })
     ]
