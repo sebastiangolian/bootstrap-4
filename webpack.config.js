@@ -24,8 +24,10 @@ module.exports = {
                 test: /\.html$/,
                 use: [
                     {
-                        loader: "html-loader",
-                        options: { minimize: true }
+                        loader: 'html-loader',
+                        options: {
+                          minimize: false,
+                        },
                     }
                 ]
             },
@@ -54,7 +56,8 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/index.html",
             filename: "./index.html",
-            favicon: "./src/favicon.ico"
+            favicon: "./src/favicon.ico",
+            minify: false
         }),
         new MiniCssExtractPlugin({
             filename: "./css/[name].[hash].css",
