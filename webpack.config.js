@@ -32,7 +32,16 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jpg|gif|ico)$/,
+                test: /\.(svg)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'icons'
+                    }
+                }
+            },
+            {
+                test: /\.(png|jpg|gif|ico)$/,
                 use: {
                     loader: 'file-loader',
                     options: {
