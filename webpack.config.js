@@ -41,6 +41,15 @@ module.exports = {
                 }
             },
             {
+                test: /\.(eot|ttf|woff|woff2)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'icons'
+                    }
+                }
+            },
+            {
                 test: /\.(png|jpg|gif|ico)$/,
                 use: {
                     loader: 'file-loader',
