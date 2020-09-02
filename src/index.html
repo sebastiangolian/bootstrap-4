@@ -42,24 +42,262 @@
     </nav>
 
     <!-- IMAGE SLIDER -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="http://lorempixel.com/g/1900/400/abstract/1">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Bootstrap</h1>
+                    <h3>Complete Website Layout</h3>
+                    <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
+                    <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="http://lorempixel.com/g/1900/400/abstract/5">
+            </div>
+            <div class="carousel-item">
+                <img src="http://lorempixel.com/g/1900/400/abstract/3">
+            </div>
+        </div>
+    </div>
 
     <!-- JUMBOTRON -->
-
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-sm-12 col-lg-9 col-xl-10">
+                <p class="lead">
+                    A web hosting service allows individuals and organizations to make website
+                    accessible via the World Wide Web.
+                </p>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-xl-2">
+                <a href="#">
+                    <button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button>
+                </a>
+            </div>
+        </div>
+    </div>
     <!-- WELCOME SECTION -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Build with ease.</h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">Welcome to my Bootstrap 4 website tutorial!
+                    Bootstrap is a free and open-source front-end library with HTML and
+                    CSS based designs.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!-- THREE COLUMN SECTION -->
-
-    <!-- FIXED BACKGROUND -->
-
-    <!-- EMOJI SECTION -->
-
-    <!-- CARDS -->
+    <div class="countainer-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-code"></i>
+                <h3>HTML</h3>
+                <p>Built with the lastest version of HTML, HTML5.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-bold"></i>
+                <h3>BOOTSTRAP</h3>
+                <p>Built with the lastest version of Bootstrap, Bootstrap 4.</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fas fa-css3"></i>
+                <h3>CSS3</h3>
+                <p>Built with the lastest version of CSS, CSS3.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- TWO COLUMN SECTION -->
+    <div class="countainer-fluid padding">
+        <div class="row padding">
+            <div class="col-md-6 col-lg-6">
+                <h2>If you build it...</h2>
+                <p>The columns will automatically stack on top of each other when
+                    the screen is less than 576px wide.</p>
+                <p>Resize the browser window to see the effect. Responsive web
+                    design has become more important as the amount of mobile traffic now
+                    accounts for more than half of total internet traffic.
+                </p>
+                <p>It can also display the web page differently depending on the
+                    screen size of viewing device.
+                </p>
+                <br />
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="http://lorempixel.com/g/800/300/sports/9">
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
 
-    <!-- CONNECT -->
+    <!-- FIXED BACKGROUND -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+
+            </div>
+        </div>
+    </figure>
+
+    <!-- EMOJI SECTION -->
+    <button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
+    <div id="emoji" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img class="img-fluid" src="http://lorempixel.com/g/400/400/animals/1">         
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="img-fluid" src="http://lorempixel.com/g/400/400/animals/2">         
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="img-fluid" src="http://lorempixel.com/g/400/400/animals/3">         
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="img-fluid" src="http://lorempixel.com/g/400/400/animals/4">         
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MEET THE TEAM -->
+    <div class="countainer-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Meet the Team</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="countainer-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="http://lorempixel.com/g/400/400/people/3">         
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">
+                            John is an Internet entrepreneur with almost 20 years of experience.
+                        </p>
+                        <a href="#" class="btn btn-outline-secondary">See profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="http://lorempixel.com/g/400/400/people/1">         
+                    <div class="card-body">
+                        <h4 class="card-title">Mary Jo</h4>
+                        <p class="card-text">
+                            John is a designer with almost 10 years of digital design experience.
+                        </p>
+                        <a href="#" class="btn btn-outline-secondary">See profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="http://lorempixel.com/g/400/400/people/6">         
+                    <div class="card-body">
+                        <h4 class="card-title">Mery Doe</h4>
+                        <p class="card-text">
+                            John is a designer with almost 5 years of web development experience.
+                        </p>
+                        <a href="#" class="btn btn-outline-secondary">See profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- OUR PHILOSOPHY -->
+    <div class="countainer-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <h2>Our Philosophy</h2>
+                <p>We know that greatness in a disruptive era requires bold ambition, curious and 
+                    talent and a culture that believes we're smarter together.
+                </p>
+                <p>Resize the browser window to see the effect. Responsive web design has become 
+                    more important as the amount of mobile traffic now accounts for more than half 
+                    of total internet traffic.
+                </p>
+                <br />
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="http://lorempixel.com/g/800/300/business/9">
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <!-- CONTACT -->
+    <div class="countainer-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Connect</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
+    <footer>
+        <div class="countainer-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Address</h5>
+                    <hr class="light">
+                    <p>100 Street</p>
+                    <p>City, State, 00-000</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Our Hours</h5>
+                    <hr class="light">
+                    <p>Monday: 9:00 - 17:00</p>
+                    <p>Saturday: 10:00 - 16:00</p>
+                    <p>Sunday: closed</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Contact</h5>
+                    <hr class="light">
+                    <p>email@example.com</p>
+                    <p>PHONE: 777-777-777</p>
+                    <p>FAX: 777-777-777</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light">
+                    <img src="images/logo.jpg" width="200"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
