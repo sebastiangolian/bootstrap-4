@@ -11,29 +11,36 @@
 
 <body class="h-100">
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
+    <nav id="home" class="navbar navbar-expand-md navbar-light bg-white sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="">
                 <img src="images/logo.jpg" width="200"></a>
-            <button class="navbar-toggler" type="button" data-toogle="collapse" data-target="#navbarResponsive">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-content"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="navbar-collapse collapse" id="navbar-content">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Connect</a>
+                        <a class="nav-link" href="#philosophy">Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#connect">Connect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +48,7 @@
         </div>
     </nav>
 
-    <!-- IMAGE SLIDER -->
+    <!-- SLIDER -->
     <div id="slides" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -51,18 +58,38 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="http://lorempixel.com/g/1900/400/abstract/1">
-                <div class="carousel-caption">
-                    <h1 class="display-2">Bootstrap</h1>
-                    <h3>Complete Website Layout</h3>
+                <div class="carousel-caption mb-5">
+                    <h1 class="display-2 text-shadow">BOOTSTRAP</h1>
+                    <h3 class="mb-3 text-shadow">Complete Website Layout</h3>
                     <button type="button" class="btn btn-outline-light btn-lg">VIEW DEMO</button>
-                    <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+                    <button type="button" class="btn btn-light btn-lg">Get Started</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="http://lorempixel.com/g/1900/400/abstract/5">
+                <div class="carousel-caption mb-5">
+                    <p class="text-left align-middle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis neque eget dui euismod,
+                        quis tincidunt est interdum. Nunc fringilla nibh vitae tortor tempus efficitur. Suspendisse leo
+                        orci, tincidunt eget dignissim eget, porttitor et enim. Donec laoreet mauris id mi dignissim
+                        dictum ac a erat. Duis risus dui, lobortis in massa et, ultrices lacinia enim. Sed ultrices
+                        vehicula enim id ornare. Nam metus sem, semper at arcu sit amet, lobortis fringilla neque...
+                    </p>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="http://lorempixel.com/g/1900/400/abstract/3">
+                <div class="carousel-caption mb-5">
+                    <p class="text-left align-middle">
+                        Aenean eu metus eu odio auctor ullamcorper. Donec ut orci risus. Integer scelerisque nibh non
+                        est scelerisque tristique. Curabitur tincidunt tincidunt purus, nec auctor felis ultricies
+                        elementum. Vivamus porttitor vehicula erat, ut aliquet nibh ultrices condimentum. Donec ornare
+                        turpis urna, et efficitur turpis viverra ut. Donec quis nibh elementum, luctus urna vel,
+                        ultricies lacus. Nullam posuere placerat sem a aliquam. Integer dignissim lorem non ante mattis
+                        malesuada. Integer vitae tincidunt leo. Fusce lacinia varius felis, sit amet congue purus porta
+                        ut.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -70,61 +97,60 @@
     <!-- JUMBOTRON -->
     <div class="container-fluid">
         <div class="row jumbotron">
-            <div class="col-sm-12 col-lg-9 col-xl-10">
+            <div class="col-sm-12 col-lg-9">
                 <p class="lead">
                     A web hosting service allows individuals and organizations to make website
                     accessible via the World Wide Web.
                 </p>
             </div>
-            <div class="col-sm-12 col-lg-3 col-xl-2">
+            <div class="col-sm-12 col-lg-3">
                 <a href="#">
                     <button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button>
                 </a>
             </div>
         </div>
     </div>
-    <!-- WELCOME SECTION -->
-    <div class="container-fluid padding">
-        <div class="row welcome text-center">
+
+    <!-- SERVICES -->
+    <div id="services" class="container-fluid">
+        <div class="row text-center">
             <div class="col-12">
-                <h1 class="display-4">Build with ease.</h1>
+                <h1 class="display-4">Services</h1>
             </div>
-            <hr>
-            <div class="col-12">
+
+            <div class="col-8 mx-auto">
+                <hr class="hr-bold" />
                 <p class="lead">Welcome to my Bootstrap 4 website tutorial!
                     Bootstrap is a free and open-source front-end library with HTML and
                     CSS based designs.
                 </p>
             </div>
         </div>
-    </div>
 
-    <!-- THREE COLUMN SECTION -->
-    <div class="countainer-fluid padding">
-        <div class="row text-center padding">
+        <div class="row text-center  mt-5">
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-code"></i>
-                <h3>HTML</h3>
+                <i class="fas fa-code text-html display-3"></i>
+                <h3 class="mt-2">HTML</h3>
                 <p>Built with the lastest version of HTML, HTML5.</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-bold"></i>
-                <h3>BOOTSTRAP</h3>
+                <i class="fas fa-bold text-bootstrap display-3"></i>
+                <h3 class="mt-2">BOOTSTRAP</h3>
                 <p>Built with the lastest version of Bootstrap, Bootstrap 4.</p>
             </div>
             <div class="col-sm-12 col-md-4">
-                <i class="fas fa-css3"></i>
-                <h3>CSS3</h3>
+                <i class="fab fa-css3 text-css3 display-3"></i>
+                <h3 class="mt-2">CSS3</h3>
                 <p>Built with the lastest version of CSS, CSS3.</p>
             </div>
         </div>
     </div>
 
-    <!-- TWO COLUMN SECTION -->
-    <div class="countainer-fluid padding">
-        <div class="row padding">
-            <div class="col-md-6 col-lg-6">
-                <h2>If you build it...</h2>
+    <!-- ABOUT -->
+    <div id="about" class="container-fluid mt-5 bg-dark text-light">
+        <div class="row">
+            <div class="col-sm-6 p-4">
+                <h2>About</h2>
                 <p>The columns will automatically stack on top of each other when
                     the screen is less than 576px wide.</p>
                 <p>Resize the browser window to see the effect. Responsive web
@@ -135,59 +161,56 @@
                     screen size of viewing device.
                 </p>
                 <br />
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-outline-light">Learn More</a>
             </div>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="http://lorempixel.com/g/800/300/sports/9">
-            </div>
-        </div>
-    </div>
-    <hr class="my-4">
-
-    <!-- FIXED BACKGROUND -->
-    <figure>
-        <div class="fixed-wrap">
-            <div id="fixed">
-
-            </div>
-        </div>
-    </figure>
-
-    <!-- EMOJI SECTION -->
-    <button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
-    <div id="emoji" class="collapse">
-        <div class="container-fluid padding">
-            <div class="row text-center">
-                <div class="col-sm-6 col-md-3">
-                    <img class="img-fluid" src="http://lorempixel.com/g/400/400/animals/1">
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <img class="img-fluid" src="http://lorempixel.com/g/400/400/animals/2">
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <img class="img-fluid" src="http://lorempixel.com/g/400/400/animals/3">
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <img class="img-fluid" src="http://lorempixel.com/g/400/400/animals/4">
-                </div>
+            <div class="col-sm-6 p-4">
+                <img class="img-fluid img-thumbnail rounded" src="http://lorempixel.com/g/800/400/business/9">
             </div>
         </div>
     </div>
 
-    <!-- MEET THE TEAM -->
-    <div class="countainer-fluid padding">
-        <div class="row welcome text-center">
+    <!-- GALLERY BUTTON BACKGROUND -->
+    <div class="container-fluid headerimage p-0 position-relative">
+        <div class="col-md-12 p-0">
+            <img src="http://lorempixel.com/g/1900/400/business/8" class="img-fluid">
+        </div>
+        <div class="container">
+            <div class="btn-wrapper text-center position-absolute w-100 mx-auto mb-2 fixed-bottom">
+                <button class="btn btn-outline-dark btn-light" data-toggle="collapse"
+                    data-target="#gallery">Gallery</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div id="gallery" class="container-fluid collapse mt-5">
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3 p-4">
+                <img class="img-fluid" src="http://lorempixel.com/g/400/400/technics/1">
+            </div>
+            <div class="col-sm-6 col-md-3 p-4">
+                <img class="img-fluid" src="http://lorempixel.com/g/400/400/technics/2">
+            </div>
+            <div class="col-sm-6 col-md-3 p-4">
+                <img class="img-fluid" src="http://lorempixel.com/g/400/400/technics/3">
+            </div>
+            <div class="col-sm-6 col-md-3 p-4">
+                <img class="img-fluid" src="http://lorempixel.com/g/400/400/technics/4">
+            </div>
+        </div>
+    </div>
+
+    <!-- TEAM -->
+    <div id="team" class="container-fluid mt-5">
+        <div class="row text-center">
             <div class="col-12">
-                <h1 class="display-4">Meet the Team</h1>
+                <h1 class="display-4">Team</h1>
+                <hr class="hr-bold" />
             </div>
         </div>
-    </div>
-
-    <!-- CARDS -->
-    <div class="countainer-fluid padding">
-        <div class="row padding">
-            <div class="col-md-4">
-                <div class="card">
+        <div class="row mt-5 px-2">
+            <div class="col-sm-4">
+                <div class="card border-0">
                     <img class="card-img-top" src="http://lorempixel.com/g/400/400/people/3">
                     <div class="card-body">
                         <h4 class="card-title">John Doe</h4>
@@ -198,8 +221,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card border-0">
                     <img class="card-img-top" src="http://lorempixel.com/g/400/400/people/1">
                     <div class="card-body">
                         <h4 class="card-title">Mary Jo</h4>
@@ -210,8 +233,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col-sm-4">
+                <div class="card border-0">
                     <img class="card-img-top" src="http://lorempixel.com/g/400/400/people/6">
                     <div class="card-body">
                         <h4 class="card-title">Mery Doe</h4>
@@ -225,11 +248,10 @@
         </div>
     </div>
 
-
     <!-- OUR PHILOSOPHY -->
-    <div class="countainer-fluid padding">
-        <div class="row padding">
-            <div class="col-lg-6">
+    <div id="philosophy" class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-lg-6 p-4">
                 <h2>Our Philosophy</h2>
                 <p>We know that greatness in a disruptive era requires bold ambition, curious and
                     talent and a culture that believes we're smarter together.
@@ -239,61 +261,53 @@
                     of total internet traffic.
                 </p>
                 <br />
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-dark">Learn More</a>
             </div>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="http://lorempixel.com/g/800/300/business/9">
+            <div class="col-lg-6 p-4">
+                <img class="img-fluid img-thumbnail rounded" src="http://lorempixel.com/g/800/300/business/9">
             </div>
         </div>
-        <hr class="my-4">
     </div>
 
-    <!-- CONTACT -->
-    <div class="countainer-fluid padding">
-        <div class="row text-center padding">
+    <!-- CONNECT -->
+    <div id="connect" class="container-fluid mt-5">
+        <div class="row text-center">
             <div class="col-12">
                 <h2>Connect</h2>
             </div>
-            <div class="col-12 social padding">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+            <div class="col-12 social">
+                <a href="#"><i class="fab fa-facebook display-4 m-3 text-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter display-4 m-3"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g display-4 m-3 text-danger"></i></a>
+                <a href="#"><i class="fab fa-instagram display-4 m-3 text-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube display-4 m-3 text-danger"></i></a>
             </div>
         </div>
     </div>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="countainer-fluid padding">
+    <footer id="contact">
+        <div class="container-fluid bg-dark text-light pt-4 mt-5">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <hr class="light">
                     <h5>Address</h5>
-                    <hr class="light">
+                    <hr class="hr-light">
                     <p>100 Street</p>
                     <p>City, State, 00-000</p>
                 </div>
                 <div class="col-md-4">
-                    <hr class="light">
                     <h5>Our Hours</h5>
-                    <hr class="light">
+                    <hr class="hr-light">
                     <p>Monday: 9:00 - 17:00</p>
                     <p>Saturday: 10:00 - 16:00</p>
                     <p>Sunday: closed</p>
                 </div>
                 <div class="col-md-4">
-                    <hr class="light">
                     <h5>Contact</h5>
-                    <hr class="light">
+                    <hr class="hr-light">
                     <p>email@example.com</p>
                     <p>PHONE: 777-777-777</p>
                     <p>FAX: 777-777-777</p>
-                </div>
-                <div class="col-12">
-                    <hr class="light">
-                    <img src="images/logo.jpg" width="200"></a>
                 </div>
             </div>
         </div>
