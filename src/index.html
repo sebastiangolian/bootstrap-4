@@ -6,55 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="favicon.ico" type="image/ico">
     <meta name="author" content="Sebastian Golian">
-    <title>2020-01-01</title>
+    <title>2020-09-11</title>
 </head>
 
 <body class="d-flex h-100 flex-column">
-    <nav class="navbar navbar-expand-sm navbar-light bg-white text-dark mb-3">
-        <a class="navbar-brand" href="#"><img src="images/logo-t-200x60.png" width="200"></a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black">
+        <a class="navbar-brand" href="#"><i class="fab fa-spotify"></i><span
+                class="ml-2 font-weight-bold">Spotify</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-content">
-            <ul class="navbar-nav ml-auto mr-5">
+
+            <i class="fas fa-chevron-circle-left fa-lg mr-1"></i>
+            <i class="fas fa-chevron-circle-right fa-lg"></i>
+
+            <ul class="navbar-nav text-left ml-5">
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Home</a>
+                    <a class="nav-link" href="#">Playlists</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">About</a>
+                    <a class="nav-link" href="#">Podcasts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Artists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Albums</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto mr-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-user fa-lg mr-2"></i> John Rambo</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <main role="main" class="container flex-grow-1">
-        <div class="row">
-            <img src="images/banner-970x250.png" class="mx-auto" />
+    <main role="main" class="container-fluid flex-grow-1">
+        <div class="row h-100">
+            <div class="col-2 bg-black text-light h-100 navbar-dark">
+                <ul class="navbar-nav flex-column p-3">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-home mr-2"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search mr-2"></i>Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-book mr-2"></i>Library</a></li>
+                    <strong>PLAYLISTS</strong>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-plus-square mr-2"></i>Create playlist</a></li>
+                    <li class="nav-item border-top mt-3"><a class="nav-link" href="#">Discover in this week</a></li>
+                </ul>
+                <div class="position-absolute fixed-bottom p-2 text-center"><i class="fas fa-file-download mr-2"></i>Install aplication</div>
+            </div>
+            <div class="col-10 bg-graphite text-light h-100">
+                
+            </div>
+
         </div>
     </main>
 
     <footer class="text-light bg-dark">
-        <div class="container p-4">
+        <div class="container-fluid p-3">
             <div class="row">
-                <div class="col text-left">
-                    <a href="https://sebastiangolian.github.io/bootstrap-templates/"
-                        class="text-light">bootstrap-templates</a>
+                <div class="col-sm-4 my-auto">
+                    <div class="row">
+                        <div class="col-8">
+                            <img src="images/white-200x200.png" width="50" class="rounded float-left mr-2" />
+                            <div class="float-left">
+                                <p class="m-0">Long title name</p>
+                                <p class="m-0 text-muted">Artist</p>
+                            </div>
+                        </div>
+                        <div class="col my-auto">
+                            <i class="far fa-heart mr-1"></i>
+                            <i class="far fa-clone"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="col text-center">
-                    <i class="fab fa-facebook fa-2x mr-1"></i>
-                    <i class="fab fa-twitter fa-2x mr-1"></i>
-                    <i class="fab fa-instagram fa-2x mr-1"></i>
-                    <i class="fab fa-tiktok fa-2x"></i>
+                <div class="col-sm-4 my-auto">
+                    <div class="row justify-content-center">
+                        <i class="fas fa-random mr-2"></i>
+                        <i class="fas fa-step-backward mr-2"></i>
+                        <i class="fas fa-pause mr-2"></i>
+                        <i class="fas fa-step-forward mr-2"></i>
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 text-right pr-1">0:00</div>
+                        <div class="col-8 px-1">
+                            <hr class="hr-bold border-light" />
+                        </div>
+                        <div class="col-2 text-left pl-1">4:00</div>
+                    </div>
                 </div>
-                <div class="col text-right my-auto">
-                    <a href="mailto:sebastiangolian@gmail.com" class="text-white">sebastiangolian@gmail.com </a>2020
+                <div class="col-sm-4 my-auto">
+                    <div class="row">
+                        <div class="col-8 text-right my-auto pr-0">
+                            <i class="fas fa-list-ul mr-2"></i>
+                            <i class="fas fa-headphones mr-2"></i>
+                            <i class="fas fa-volume-up mr-2"></i>
+                        </div>
+                        <div class="col-4 pl-0">
+                            <hr class="hr-bold border-light" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
-
 </body>
 
 </html>
