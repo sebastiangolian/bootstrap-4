@@ -7,7 +7,6 @@
     "scripts": true,
     ".gitignore": true,
     "src\\favicon.ico": true,
-    ".vscode": true,
-    "package.json": true
+    ".vscode": true
   }
 }
